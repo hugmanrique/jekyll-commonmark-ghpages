@@ -4,9 +4,9 @@ Gem::Specification.new do |spec|
   spec.name          = "jekyll-commonmark-ghpages"
   spec.summary       = "CommonMark generator for Jekyll"
   spec.version       = "0.1.6"
-  spec.authors       = ["Ashe Connor"]
+  spec.authors       = ["Ashe Connor", "Hugo Manrique"]
   spec.email         = "kivikakk@github.com"
-  spec.homepage      = "https://github.com/github/jekyll-commonmark-ghpages"
+  spec.homepage      = "https://github.com/hugmanrique/jekyll-commonmark-ghpages"
   spec.licenses      = ["MIT"]
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "jekyll-commonmark", "~> 1.2"
-  spec.add_runtime_dependency "commonmarker", "~> 0.17.6"
+  spec.add_runtime_dependency "commonmarker", "~> 0.21"
   spec.add_runtime_dependency "rouge", ">= 2.0", "< 4.0"
 
   spec.add_development_dependency "rspec", "~> 3.0"
