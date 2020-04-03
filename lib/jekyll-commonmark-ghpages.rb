@@ -33,9 +33,9 @@ class JekyllCommonMarkCustomRenderer < ::CommonMarker::HtmlRenderer
 
     if lang && lexer = ::Rouge::Lexer.find_fancy(lang, content)
       block do
-        # out("<div class=\"language-#{lang} highlighter-rouge\">")
+        out("<pre class=\"highlight\" data-lang=\"#{lang}\">")
         out(::Rouge::Formatters::HTML.new().format(lexer.lex(content)))
-        # out("</div>")
+        out("</pre>")
       end
       return
     end
