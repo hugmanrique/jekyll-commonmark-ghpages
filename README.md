@@ -6,9 +6,9 @@
 [![Build Status](https://img.shields.io/travis/github/jekyll-commonmark-ghpages/master.svg)](https://travis-ci.org/github/jekyll-commonmark-ghpages)
 [![Windows Build status](https://img.shields.io/appveyor/ci/github/jekyll-commonmark-ghpages/master.svg?label=Windows%20build)](https://ci.appveyor.com/project/github/jekyll-commonmark-ghpages)
 
-Jekyll Markdown converter that uses [libcmark-gfm](https://github.com/github/cmark), GitHub's fork of [cmark](https://github.com/commonmark/cmark), the reference parser for CommonMark, with some additions to ensure compatibility with existing Kramdown-based sites. This fork loosens the `commonmarker` dependency to support new extensions.
+Jekyll Markdown converter that uses [libcmark-gfm](https://github.com/github/cmark), GitHub's fork of [cmark](https://github.com/commonmark/cmark), the reference parser for CommonMark, with some additions to ensure compatibility with existing Kramdown-based sites. This fork loosens the `commonmarker` dependency to support new options and extensions.
 
-`github/jekyll-commonmark-ghpages` hasn't been maintained since Jan 2019, but if work resumes there this fork will most likely get deprecated and eventually archived.
+[`github/jekyll-commonmark-ghpages`](https://github.com/github/jekyll-commonmark-ghpages/) hasn't been maintained since Jan 2019, but if work resumes this fork will most likely get deprecated and eventually archived.
 
 ## Installation
 
@@ -35,3 +35,5 @@ commonmark:
   options: ["SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 ```
+
+See https://github.com/gjtorikian/commonmarker for an updated list of options and extensions.
