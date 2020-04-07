@@ -46,7 +46,7 @@ class JekyllCommonMarkCustomRenderer < ::CommonMarker::HtmlRenderer
       out('><code>')
     else
       out("<pre#{sourcepos(node)}><code")
-      out(' class="language-', lang, '">') if lang
+      out(' class="language-', lang, '"') if lang
       out('>')
     end
     out(escape_html(content))
